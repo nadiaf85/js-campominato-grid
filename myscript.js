@@ -8,8 +8,8 @@
 
 
 
-let scelta = document.getElementById('scelta');
-let bottone = document.getElementById('play');
+let scelta = document.getElementById('scelta'); //creo variabile per poterla richiamare
+let bottone = document.getElementById('play'); //creo variabile per poterla richiamare
 
 
 bottone.addEventListener('click', function(){
@@ -22,11 +22,11 @@ bottone.addEventListener('click', function(){
     }
     }else if (livello == "medium"){
         for(let k=0; k<81; k++){
-            bloccoQuadrati.innerHTML += '<div class="box2"></div>';
+            bloccoQuadrati.innerHTML += '<div class="box_2"></div>';
     }
     }else if(livello == "hard"){
         for(let j=0; j<49; j++){
-            bloccoQuadrati.innerHTML += '<div class="box3"></div>';
+            bloccoQuadrati.innerHTML += '<div class="box_3"></div>';
         }
     }
 });
