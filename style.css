@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.ms_logo img{
+    height: 70px;
+}
+.ms_logo h1{
+    vertical-align: middle;
+}
+
+#scelta{
+    width: 30%;
+    border-radius: 8px solid lightgray;
+    background-color: lightgray;
+}
+
+#play{
+    width: 20%;
+    border-radius: 8px solid lightgray;
+    border: lightgray;
+}
+
+.quadrati{
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border: 2px solid black;
+
+}
