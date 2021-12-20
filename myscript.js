@@ -17,16 +17,16 @@ bottone.addEventListener('click', function(){
     let bloccoQuadrati = document.getElementById('blocco-quadrati');
     bloccoQuadrati.innerHTML='';
     if(livello == "easy"){
-        for(let i=0; i<100; i++){
-            bloccoQuadrati.innerHTML += '<div class="box"></div>';
+        for(let i=1; i<=100; i++){
+            bloccoQuadrati.innerHTML += '<div class="box">'+ i +'</div>';
     }
     }else if (livello == "medium"){
-        for(let k=0; k<81; k++){
-            bloccoQuadrati.innerHTML += '<div class="box_2"></div>';
+        for(let k=1; k<=81; k++){
+            bloccoQuadrati.innerHTML += '<div class="box_2">'+ k +'</div>';
     }
     }else if(livello == "hard"){
-        for(let j=0; j<49; j++){
-            bloccoQuadrati.innerHTML += '<div class="box_3"></div>';
+        for(let j=1; j<=49; j++){
+            bloccoQuadrati.innerHTML += '<div class="box_3">'+ j +'</div>';
         }
     }
 });
