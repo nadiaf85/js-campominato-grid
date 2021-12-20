@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.container{
+    width: 100%;
+    height: 800px;
+}
 
 .ms_logo img{
     height: 70px;
@@ -24,10 +28,9 @@
     border: lightgray;
 }
 
-.quadrati{
-    width: 70px;
+.box{
+    width: calc(100% / 10);
     height: 70px;
     background-color: red;
     border: 2px solid black;
-
 }
