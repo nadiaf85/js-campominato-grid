@@ -12,21 +12,29 @@ let scelta = document.getElementById('scelta'); //creo variabile per poterla ric
 let bottone = document.getElementById('play'); //creo variabile per poterla richiamare
 
 
-bottone.addEventListener('click', function(){
+bottone.addEventListener('click', function(){ 
     let livello = document.getElementById('scelta').value;
     let bloccoQuadrati = document.getElementById('blocco-quadrati');
     bloccoQuadrati.innerHTML='';
     if(livello == "easy"){
         for(let i=1; i<=100; i++){
-            bloccoQuadrati.innerHTML += '<div class="box">'+ i +'</div>';
+            bloccoQuadrati.innerHTML += '<div class="cella box">'+ i +'</div>';
     }
     }else if (livello == "medium"){
         for(let k=1; k<=81; k++){
-            bloccoQuadrati.innerHTML += '<div class="box_2">'+ k +'</div>';
+            bloccoQuadrati.innerHTML += '<div class="cella box_2">'+ k +'</div>';
     }
     }else if(livello == "hard"){
         for(let j=1; j<=49; j++){
-            bloccoQuadrati.innerHTML += '<div class="box_3">'+ j +'</div>';
+            bloccoQuadrati.innerHTML += '<div class="cella box_3">'+ j +'</div>';
         }
     }
+
+    let cella = document.getElementsByClassName('cella');//aggiungo colore al click
+        for(let index=0; index<cella.length; index++){
+            cella[index].addEventListener("click", function(){
+                messaggio = this.innerHTML
+                this.classList.add("azzurro")
+            })
+        }
 });
